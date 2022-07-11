@@ -6,3 +6,5 @@
 .prettierignore
 
 *node_modules/*
+src/img/logo-forest.psd
+dist/img/logo-forest.psd
