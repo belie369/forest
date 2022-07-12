@@ -1,3 +1,5 @@
+@use './hamburger.scss';
+
 *,
 *::before,
 *::after {
@@ -17,13 +19,18 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6rem;
 	background-color: #fff;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 1.5em;
 	width: 100%;
-	min-width: 1400px;
+	max-width: 1400px;
 }
 
 //NAV
@@ -36,13 +43,43 @@ body {
 
 	&__nav {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		height: 80px;
+		height: 90px;
 	}
 
-	&__burger-btn {
-		// font: inherit;
-		display: inline-block;
+	&__items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 90px;
+		right: 0;
+		width: 100%;
+		height: calc(100vh - 90px);
+		background-color: #fff;
+		opacity: 0;
+		transform: translateX(100%);
+		transition: transform 0.3s, opacity 0.3s;
 	}
+
+	&__item {
+		margin-bottom: 2em;
+		font-size: 2.4rem;
+		list-style: none;
+		text-transform: uppercase;
+
+		a {
+			padding: 1em 1.5em;
+			text-decoration: none;
+			font-weight: 700;
+			color: #000;
+		}
+	}
+}
+
+.show-menu {
+	transform: translateX(0);
+	opacity: 1;
 }
