@@ -2,8 +2,8 @@ let burgerBtn;
 let logo;
 let navbar;
 let menu;
-let menuItems;
-let menuLinks;
+let navbarItems;
+let navbarLinks;
 
 const prepareDOMElements = () => {
 	burgerBtn = document.querySelector('.navbar__burger-btn');
