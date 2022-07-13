@@ -1,5 +1,6 @@
 @use './hamburger.scss';
 @use './heights.scss' as h;
+@use './colors.scss' as c;
 
 *,
 *::before,
@@ -19,7 +20,7 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
-	background-color: #fff;
+	background-color: c.$body-color;
 	height: auto;
 }
 
@@ -39,7 +40,7 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: c.$navbar-color;
 	z-index: 10;
 
 	&__nav {
@@ -59,7 +60,7 @@ a {
 		right: 0;
 		width: 100%;
 		height: calc(100vh - h.$menu);
-		background-color: #fff;
+		background-color: c.$menu-color;
 		opacity: 0;
 		transform: translateX(100%);
 		transition: transform 0.3s, opacity 0.3s;
@@ -75,7 +76,7 @@ a {
 			padding: 1em 1.5em;
 			text-decoration: none;
 			font-weight: 700;
-			color: #000;
+			color: c.$link-color;
 		}
 	}
 }
@@ -105,7 +106,7 @@ a {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.4);
+		background-color: c.$hero-shadow;
 		z-index: -1;
 	}
 
@@ -116,7 +117,7 @@ a {
 		flex-direction: column;
 		height: 60vh;
 		padding: 1.5em;
-		color: #fff;
+		color: c.$header-text-color;
 		z-index: 10;
 
 		h1 {
