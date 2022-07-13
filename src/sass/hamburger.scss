@@ -31,11 +31,11 @@
 	&__burger-btn-inner {
 		bottom: 10px;
 		transition: transform 0.13s linear;
-	}
 
-	&__burger-btn-inner:after,
-	&__burger-btn-inner:before {
-		content: '';
+		&:after,
+		&:before {
+			content: '';
+		}
 	}
 
 	&__burger-btn-inner:before {
@@ -53,18 +53,18 @@
 		bottom: 0;
 		transform: translate3d(0, -10px, 0) rotate(-45deg);
 		transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-	}
 
-	&__burger-btn.is-active &__burger-btn-inner:before {
-		top: 0;
-		transform: rotate(-90deg);
-		transition: top 0.12s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-			0.1s transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-	}
+		&:before {
+			top: 0;
+			transform: rotate(-90deg);
+			transition: top 0.12s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+				0.1s transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		}
 
-	&__burger-btn.is-active &__burger-btn-inner:after {
-		top: 0;
-		opacity: 0;
-		transition: top 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1) 0.1s, opacity 0.1s linear;
+		&:after {
+			top: 0;
+			opacity: 0;
+			transition: top 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1) 0.1s, opacity 0.1s linear;
+		}
 	}
 }
