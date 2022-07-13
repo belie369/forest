@@ -1,5 +1,48 @@
+@use './heights' as h;
+@use './colors' as c;
+
 @media (min-width: 992px) {
-	body {
-		background-color: #000;
+	.navbar {
+		&__logo img {
+			width: 90%;
+		}
+
+		&__burger-btn {
+			display: none;
+		}
+
+		&__items {
+			flex-direction: row;
+			justify-content: flex-end;
+			position: static;
+			height: h.$menu;
+			transform: translateX(0);
+			opacity: 1;
+			width: auto;
+			// background-color: #000;
+		}
+
+		&__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 0;
+			font-size: 1.8rem;
+			text-transform: none;
+
+			a {
+				font-weight: normal;
+			}
+
+			&:hover {
+				height: h.$menu;
+				background-color: #000;
+				cursor: pointer;
+
+				a {
+					color: #fff;
+				}
+			}
+		}
 	}
 }

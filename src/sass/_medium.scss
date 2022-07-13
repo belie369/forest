@@ -1,0 +1,14 @@
+@use './heights' as h;
+@use './colors' as c;
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 2em;
+	}
+
+	.navbar {
+		&__logo img {
+			width: 80%;
+		}
+	}
+}
