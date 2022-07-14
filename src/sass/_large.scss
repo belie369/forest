@@ -24,7 +24,6 @@
 			transform: translateX(0);
 			opacity: 1;
 			width: auto;
-			// background-color: #000;
 		}
 
 		&__item {
@@ -32,11 +31,14 @@
 			justify-content: center;
 			align-items: center;
 			margin-bottom: 0;
+			height: h.$menu-maxi;
 			font-size: 1.8rem;
 			text-transform: none;
+			transition: background-color 0.3s;
 
 			a {
 				font-weight: normal;
+				transition: color 0.3s;
 			}
 
 			&:hover {
