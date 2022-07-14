@@ -133,3 +133,39 @@ a {
 		}
 	}
 }
+
+//ABOUT
+.about {
+	margin-bottom: 2em;
+
+	&__title {
+		margin: 1.5em 0;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: normal;
+		font-size: 3rem;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-img {
+			img {
+				margin-bottom: 1em;
+				max-width: 100%;
+			}
+		}
+
+		&-text-heading {
+			margin-bottom: 1em;
+			font-size: 2.4rem;
+		}
+
+		&-text-info {
+			line-height: 2;
+		}
+	}
+}
