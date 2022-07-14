@@ -75,6 +75,8 @@
 
 	//ABOUT
 	.about {
+		margin-bottom: 4.6em;
+
 		&__title {
 			margin: 2em 0;
 			font-size: 3.6rem;
@@ -91,6 +93,19 @@
 					margin-bottom: 0;
 				}
 			}
+		}
+	}
+
+	//ADVENTURE
+	.adventure {
+		&__img {
+			height: 25vh;
+			background-image: url('../img/girl-big.jpg');
+		}
+
+		&__text {
+			padding: 0.8em 3.5em;
+			font-size: 3.5rem;
 		}
 	}
 }
