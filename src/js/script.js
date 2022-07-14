@@ -19,8 +19,15 @@ const showMenu = () => {
 	burgerBtn.classList.toggle('is-active');
 };
 
+const closeMenu = () => {
+	burgerBtn.classList.remove('is-active');
+	menu.classList.remove('show-menu');
+};
+
 const prepareDOMEvents = () => {
 	burgerBtn.addEventListener('click', showMenu);
+	logo.addEventListener('click', closeMenu);
+	navbarItems.forEach((item) => item.addEventListener('click', closeMenu));
 };
 
 prepareDOMElements();
