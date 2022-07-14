@@ -17,7 +17,7 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
 	background-color: c.$body-color;
 	height: auto;
@@ -124,7 +124,8 @@ a {
 		z-index: 10;
 
 		h1 {
-			font-size: 3rem;
+			font-size: 3.2rem;
+			font-weight: 700;
 		}
 
 		p {
