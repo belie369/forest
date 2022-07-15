@@ -31,7 +31,7 @@
 			justify-content: center;
 			align-items: center;
 			margin-bottom: 0;
-			height: h.$menu-maxi;
+			height: calc(h.$menu-maxi + 1px);
 			font-size: 1.8rem;
 			text-transform: none;
 			transition: background-color 0.3s;
@@ -42,7 +42,7 @@
 			}
 
 			&:hover {
-				height: h.$menu-maxi;
+				height: calc(h.$menu-maxi + 1px);
 				background-color: #000;
 				cursor: pointer;
 
@@ -106,6 +106,26 @@
 		&__text {
 			padding: 0.8em 3.5em;
 			font-size: 3.5rem;
+		}
+	}
+
+	//OFFER
+	.offer {
+		margin-bottom: 4.6em;
+
+		&__title {
+			margin: 2em 0 1em;
+			font-size: 3.6rem;
+		}
+
+		&__text {
+			text-align: center;
+		}
+
+		&__box {
+			flex-direction: row;
+			justify-content: center;
+			gap: 3.5em;
 		}
 	}
 }
