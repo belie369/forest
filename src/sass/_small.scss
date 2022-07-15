@@ -20,7 +20,7 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
 	background-color: c.$body-color;
-	height: auto;
+	// height: auto;
 }
 
 a {
@@ -43,6 +43,7 @@ a {
 	z-index: 10;
 
 	&__logo img {
+		min-width: 110px;
 		width: 60%;
 	}
 
