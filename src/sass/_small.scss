@@ -238,6 +238,11 @@ a {
 		min-height: 380px;
 		box-shadow: 0 0 7px c.$box-shadow;
 		border-radius: 5px;
+		transition: box-shadow 0.3s;
+
+		&:hover {
+			box-shadow: 0 0 14px c.$box-shadow;
+		}
 
 		&-details {
 			display: flex;
