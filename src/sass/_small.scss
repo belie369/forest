@@ -40,6 +40,7 @@ a {
 	top: 0;
 	width: 100%;
 	background-color: c.$navbar-color;
+	border-bottom: 1px solid c.$navbar-border;
 	z-index: 10;
 
 	&__logo img {
@@ -175,6 +176,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 3.2em;
 
 	&__img {
 		position: relative;
@@ -204,5 +206,30 @@ a {
 		text-align: center;
 		border: 1px solid #fff;
 		z-index: 10;
+	}
+}
+
+//OFFER
+
+.offer {
+	margin-bottom: 3.2em;
+
+	&__title {
+		margin: 1.5em 0;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: normal;
+		font-size: 3rem;
+	}
+
+	&__text {
+		margin-bottom: 3.2em;
+		text-align: center;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		gap: 5em;
 	}
 }
