@@ -19,6 +19,7 @@ body {
 	flex-direction: column;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
+	color: c.$font-color;
 	background-color: c.$body-color;
 	// height: auto;
 }
@@ -50,6 +51,7 @@ button {
 	&__logo img {
 		min-width: 110px;
 		width: 60%;
+		z-index: 10;
 	}
 
 	&__nav {
@@ -106,7 +108,7 @@ button {
 	background-size: cover;
 	z-index: 0;
 
-	&:before {
+	&::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -190,7 +192,7 @@ button {
 		background-position: 50% 50%;
 		background-size: cover;
 
-		&:before {
+		&::before {
 			content: '';
 			position: absolute;
 			top: 0;
@@ -209,7 +211,7 @@ button {
 		font-weight: 500;
 		text-align: center;
 		border: 1px solid #fff;
-		z-index: 10;
+		z-index: 9;
 	}
 }
 
@@ -298,6 +300,38 @@ button {
 			&:hover {
 				background-color: c.$offer-button-hover;
 				box-shadow: 0 1px 5px c.$offer-button-hover;
+			}
+		}
+	}
+
+	&__details {
+		margin: 3.2em 0;
+		text-align: center;
+
+		a {
+			position: relative;
+			padding: 0.1em 0.2em;
+			border-bottom: 2px solid c.$link-border;
+			color: c.$font-color;
+			font-weight: 700;
+			transition: background-color 0.3s;
+
+			&:hover::before {
+				transform: scaleY(1);
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				background-color: c.$link-border;
+				transform: scaleY(0);
+				transform-origin: bottom;
+				transition: transform 0.3s;
+				z-index: -1;
 			}
 		}
 	}
