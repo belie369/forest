@@ -295,7 +295,7 @@ button {
 			border: none;
 			box-shadow: 0 2px 6px c.$box-shadow;
 			border-radius: 8px;
-			transition: background-color 0.3s, box-shadow 0.3s;
+			transition: background-color 0.3s, box-shadow 0.4s;
 
 			&:hover {
 				background-color: c.$offer-button-hover;
