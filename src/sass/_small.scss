@@ -316,10 +316,6 @@ button {
 			font-weight: 700;
 			transition: background-color 0.3s;
 
-			&:hover::before {
-				transform: scaleY(1);
-			}
-
 			&::before {
 				content: '';
 				position: absolute;
@@ -332,6 +328,10 @@ button {
 				transform-origin: bottom;
 				transition: transform 0.3s;
 				z-index: -1;
+			}
+
+			&:hover::before {
+				transform: scaleY(1);
 			}
 		}
 	}
