@@ -3,7 +3,10 @@
 
 @media (min-width: 768px) {
 	.container {
+		margin: 0 auto;
 		padding: 0 2em;
+		width: 100%;
+		max-width: 1200px;
 	}
 
 	//NAV
@@ -23,8 +26,6 @@
 
 	//OFFER
 	.offer {
-		margin-bottom: 4.6em;
-
 		&__box {
 			flex-direction: row;
 			justify-content: center;
@@ -35,6 +36,19 @@
 		&__card {
 			min-width: 250px;
 			min-height: 380px;
+		}
+	}
+
+	//FOOTER
+	.footer {
+		&__box-logo {
+			margin: 3.5em 0;
+		}
+
+		&__box-details {
+			display: flex;
+			justify-content: space-around;
+			gap: 3.5em;
 		}
 	}
 }

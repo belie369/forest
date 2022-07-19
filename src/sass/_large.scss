@@ -111,8 +111,6 @@
 
 	//OFFER
 	.offer {
-		margin-bottom: 4.6em;
-
 		&__title {
 			margin: 2em 0 1em;
 			font-size: 3.6rem;
@@ -126,6 +124,31 @@
 			flex-direction: row;
 			justify-content: space-evenly;
 			gap: 0.5em;
+		}
+	}
+
+	//FOOTER
+	.footer {
+		background-color: c.$footer-background;
+
+		&__box {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 3.5em;
+			padding: 0 5em 2.5em;
+		}
+
+		&__box-details {
+			display: flex;
+			justify-content: space-around;
+			gap: 3em;
+			margin-right: 5em;
+
+			h3 {
+				font-size: 2.2rem;
+			}
 		}
 	}
 }

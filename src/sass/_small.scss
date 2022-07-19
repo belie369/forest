@@ -343,21 +343,52 @@ button {
 
 	&__box {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
-		margin-top: 3.5em;
+		margin: 3.5em 0 4em;
+	}
+
+	&__box-logo {
+		margin-bottom: 3.5em;
 	}
 
 	&__box-details {
 		display: flex;
 		justify-content: space-around;
-		gap: 3em;
-		margin-right: 5em;
+		gap: 2em;
 
 		h3 {
-			margin-bottom: 1em;
-			font-size: 2.2rem;
+			margin-bottom: 0.8em;
+			font-size: 1.8rem;
 			font-weight: 700;
 		}
+
+		ul {
+			list-style: none;
+		}
+
+		li {
+			margin: 1em 0;
+			font-size: 1.2rem;
+		}
+
+		a {
+			color: c.$footer-font;
+			transition: color 0.5s, text-decoration 0.3s;
+
+			&:hover {
+				color: c.$footer-hover;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__copyrights {
+		padding: 1.5em;
+		color: c.$footer-font;
+		font-size: 1.2rem;
+		text-align: center;
+		border-top: 1px solid c.$footer-line;
 	}
 }
