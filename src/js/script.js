@@ -35,16 +35,17 @@ const closeMenu = () => {
 
 const scrollSpy = () => {
 	sections.forEach((section) => {
-		let top = window.scrollY;
-		let offset = section.offsetTop - 300;
-		let height = section.offsetHeight;
-		let id = section.getAttribute('id');
+		const id = section.getAttribute('id');
 
-		if (top >= offset && top < offset + height) {
+		const viewTop = window.scrollY;
+		const sectionTop = section.offsetTop - 600;
+		const sectionBottom = section.offsetTop + section.offsetHeight;
+
+		if (viewTop >= sectionTop && viewTop < sectionBottom) {
 			navbarItems.forEach((item) => {
 				item.classList.remove('active');
-				document.querySelector('.navbar__item a[href*=' + id + ']').parentElement.classList.add('active');
 			});
+			document.querySelector(`.navbar__item a[href*=${id}]`).parentElement.classList.add('active');
 		}
 	});
 };
