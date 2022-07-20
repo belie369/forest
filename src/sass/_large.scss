@@ -25,32 +25,6 @@
 			opacity: 1;
 			width: auto;
 		}
-
-		&__item {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 0;
-			height: calc(h.$menu-maxi + 1px);
-			font-size: 1.8rem;
-			text-transform: none;
-			transition: background-color 0.3s;
-
-			a {
-				font-weight: 500;
-				transition: color 0.3s;
-			}
-
-			&:hover {
-				height: calc(h.$menu-maxi + 1px);
-				background-color: #000;
-				cursor: pointer;
-
-				a {
-					color: #fff;
-				}
-			}
-		}
 	}
 
 	//HEADER
@@ -123,7 +97,7 @@
 		&__box {
 			flex-direction: row;
 			justify-content: space-evenly;
-			gap: 0.5em;
+			gap: 1.5em;
 		}
 	}
 
